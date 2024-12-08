@@ -7,14 +7,14 @@
 }
 
 body {
-    background-color: #17202a;
+    background-color: #fff;
     color: #fff;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
 }
 
 .heading{
-    color:#f4d03f;
+    color:#3a4d82;
     padding: 1rem 0;
     text-align: center;
     font-size: 3rem;
@@ -28,15 +28,15 @@ body {
     border-top-left-radius: 5px;
     color: #fff;
     font-size: 1.3rem;
-    background-color: #de3153;
+    background-color: #a2443d;
 
 }
 
 .year{
-    background-color: #fff;
+    background-color: #d6d0bf;
     padding: 0.2rem 0.8rem;
     border-radius: 10px;
-    color: #2c3e50;
+    color: #a2443d;
     font-size: 0.9rem;
     margin: 0 0.5rem;
 }
@@ -48,7 +48,6 @@ body {
 #timeline button{
     margin: 0.5rem 0rem 1rem 1rem;
     outline: none;
-    border: 1px solid #ddd;
     padding:0.5rem 1rem;
     border-radius: 50px;
     background: transparent;
@@ -73,7 +72,7 @@ body {
     width: 7px;
     margin: 0 auto;
     padding-top: 50px;
-    background-color: #58d68e;
+    background-color: #f2ce6d;
 }
 
 #timeline ul li .box {
@@ -113,7 +112,7 @@ body {
     top:20;
     width: 45px;
     height:45px;
-    background: #2c3e50;
+    background:#3a4d82;
     transform: translateX(-50%);
     border-radius: 50%;
 
@@ -124,7 +123,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1.7rem;
-    color:#f4d03f;
+    color:#d6d0bf;
 }
 
 
@@ -149,13 +148,17 @@ body {
 /* button opens */
 #modal1 {
     background-color: #fff;
+    border-width: 15px,15px,15px,15px;
     opacity: 0;
     position: fixed;
     padding-left: 15px;
     padding-top: 15px;
+    height: 200px;
     top: 0;
     left: 0;
     right: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
     bottom: 0;
     transition: all 0.3s ease-in-out;
     z-index: -1;
@@ -169,178 +172,228 @@ body {
 #modal1.open{
     opacity:1;
     z-index: 999;
+    height: 400px;
 }
+
 
 
 
     /* button opens */
 #modal2 {
     background-color: #fff;
-    color:#000;
-    padding-left: 15px;
-    padding-top: 15px;
+    border-width: 15px,15px,15px,15px;
     opacity: 0;
     position: fixed;
+    padding-left: 15px;
+    padding-top: 15px;
+    height: 200px;
     top: 0;
     left: 0;
     right: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
     bottom: 0;
     transition: all 0.3s ease-in-out;
     z-index: -1;
     display: flex;
     align-items: left;
     justify-content: left;
+    color:#000;
 }
 
 
 #modal2.open{
     opacity:1;
     z-index: 999;
+    height: 400px;
 }
 
 
     /* 3rd button opens */
 #modal3 {
-        background-color: #fff;
-        color:#000;
-        padding-left: 15px;
-        padding-top: 15px;
-        opacity: 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        transition: all 0.3s ease-in-out;
-        z-index: -1;
-        display: flex;
-        align-items: left;
-        justify-content: left;
+    background-color: #fff;
+    border-width: 15px,15px,15px,15px;
+    opacity: 0;
+    position: fixed;
+    padding-left: 15px;
+    padding-top: 15px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color:#000;
     }
     
 #modal3.open{
         opacity:1;
         z-index: 999;
+        height: 400px;
     }
     /* 4th button opens */
     #modal4 {
         background-color: #fff;
-        color:#000;
-        padding-left: 15px;
-        padding-top: 15px;
+        border-width: 15px,15px,15px,15px;
         opacity: 0;
         position: fixed;
+        padding-left: 15px;
+        padding-top: 15px;
+        height: 200px;
         top: 0;
         left: 0;
         right: 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
         bottom: 0;
         transition: all 0.3s ease-in-out;
         z-index: -1;
         display: flex;
         align-items: left;
         justify-content: left;
+        color:#000;
     }
     
 #modal4.open{
         opacity:1;
         z-index: 999;
+        height: 400px;
     }
 
     /* 5th button opens */
     #modal5 {
         background-color: #fff;
-        color:#000;
-        padding-left: 15px;
-        padding-top: 15px;
+        border-width: 15px,15px,15px,15px;
         opacity: 0;
         position: fixed;
+        padding-left: 15px;
+        padding-top: 15px;
+        height: 200px;
         top: 0;
         left: 0;
         right: 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
         bottom: 0;
         transition: all 0.3s ease-in-out;
         z-index: -1;
         display: flex;
         align-items: left;
         justify-content: left;
+        color:#000;
     }
     
 #modal5.open{
         opacity:1;
         z-index: 999;
+        height: 400px;
     }
 
 
     /* 6th button opens */
     #modal6 {
         background-color: #fff;
-        color:#000;
-        padding-left: 15px;
-        padding-top: 15px;
+        border-width: 15px,15px,15px,15px;
         opacity: 0;
         position: fixed;
+        padding-left: 15px;
+        padding-top: 15px;
+        height: 200px;
         top: 0;
         left: 0;
         right: 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
         bottom: 0;
         transition: all 0.3s ease-in-out;
         z-index: -1;
         display: flex;
         align-items: left;
         justify-content: left;
+        color:#000;
     }
     
 #modal6.open{
         opacity:1;
         z-index: 999;
+        height: 400px;
     }
 
 
     /* 6th button opens */
     #modal7 {
         background-color: #fff;
-        color:#000;
-        padding-left: 15px;
-        padding-top: 15px;
+        border-width: 15px,15px,15px,15px;
         opacity: 0;
         position: fixed;
+        padding-left: 15px;
+        padding-top: 15px;
+        height: 200px;
         top: 0;
         left: 0;
         right: 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
         bottom: 0;
         transition: all 0.3s ease-in-out;
         z-index: -1;
         display: flex;
         align-items: left;
         justify-content: left;
+        color:#000;
     }
     
 #modal7.open{
         opacity:1;
         z-index: 999;
+        height: 400px;
     }
 
 
     /* 6th button opens */
     #modal8 {
         background-color: #fff;
-        color:#000;
-        padding-left: 15px;
-        padding-top: 15px;
+        border-width: 15px,15px,15px,15px;
         opacity: 0;
         position: fixed;
+        padding-left: 15px;
+        padding-top: 15px;
+        height: 200px;
         top: 0;
         left: 0;
         right: 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
         bottom: 0;
         transition: all 0.3s ease-in-out;
         z-index: -1;
         display: flex;
         align-items: left;
         justify-content: left;
+        color:#000;
     }
     
 #modal8.open{
         opacity:1;
         z-index: 999;
+        height: 400px;
     }
+
+#contextHeading{
+    color:black;
+    margin-left: 100px ;
+    margin-top: 50px ;
+}
+
+#contextParagraph{
+    color:black;
+    margin-left: 90px ;
+    margin-top: 20px ;
+    margin-right: 90px ;
+}
