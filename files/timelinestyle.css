@@ -8,7 +8,7 @@
 
 body {
     background-color: #fff;
-    color: #fff;
+    color: #000;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
 }
@@ -20,6 +20,8 @@ body {
     font-size: 3rem;
     box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
 }
+
+
 
 .title{
     box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
@@ -86,9 +88,6 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-/* THESE LINES ARE HOW YOU SHIFT TIMELINE EVENTS TO LEFT OR RIGHT. */
-/* Right now it's just pulling every other (Evens/odds) but I can add another class to these to make it go on the correct side */
-
 /*right side*/
 #timeline ul li:nth-child(odd) .box{
     left:40px;
@@ -118,7 +117,7 @@ body {
 
 }
 
-#timeline .fa-brands {
+#timeline .fa-solid {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,7 +144,7 @@ body {
 
 
 
-/* button opens */
+/* 1st button opens */
 #modal1 {
     background-color: #fff;
     border-width: 15px,15px,15px,15px;
@@ -172,13 +171,13 @@ body {
 #modal1.open{
     opacity:1;
     z-index: 999;
-    height: 400px;
+    height: 325px;
 }
 
 
 
 
-    /* button opens */
+/* 2nd button opens */
 #modal2 {
     background-color: #fff;
     border-width: 15px,15px,15px,15px;
@@ -205,11 +204,11 @@ body {
 #modal2.open{
     opacity:1;
     z-index: 999;
-    height: 400px;
-}
+    height: 325px;
+} 
 
 
-    /* 3rd button opens */
+/* 3rd button opens */
 #modal3 {
     background-color: #fff;
     border-width: 15px,15px,15px,15px;
@@ -217,6 +216,7 @@ body {
     position: fixed;
     padding-left: 15px;
     padding-top: 15px;
+    padding-right: 15px;
     height: 200px;
     top: 0;
     left: 0;
@@ -235,9 +235,9 @@ body {
 #modal3.open{
         opacity:1;
         z-index: 999;
-        height: 400px;
+        height: 300px;
     }
-    /* 4th button opens */
+/* 4th button opens */
     #modal4 {
         background-color: #fff;
         border-width: 15px,15px,15px,15px;
@@ -263,10 +263,9 @@ body {
 #modal4.open{
         opacity:1;
         z-index: 999;
-        height: 400px;
+        height: 325px;
     }
-
-    /* 5th button opens */
+/* 5th button opens */
     #modal5 {
         background-color: #fff;
         border-width: 15px,15px,15px,15px;
@@ -292,11 +291,11 @@ body {
 #modal5.open{
         opacity:1;
         z-index: 999;
-        height: 400px;
+        height: 450px;
     }
 
 
-    /* 6th button opens */
+/* 6th button opens */
     #modal6 {
         background-color: #fff;
         border-width: 15px,15px,15px,15px;
@@ -322,11 +321,11 @@ body {
 #modal6.open{
         opacity:1;
         z-index: 999;
-        height: 400px;
+        height: 220px;
     }
 
 
-    /* 6th button opens */
+    /* 7th button opens */
     #modal7 {
         background-color: #fff;
         border-width: 15px,15px,15px,15px;
@@ -352,11 +351,11 @@ body {
 #modal7.open{
         opacity:1;
         z-index: 999;
-        height: 400px;
+        height: 220px;
     }
 
 
-    /* 6th button opens */
+/* 8th button opens */
     #modal8 {
         background-color: #fff;
         border-width: 15px,15px,15px,15px;
@@ -382,13 +381,122 @@ body {
 #modal8.open{
         opacity:1;
         z-index: 999;
-        height: 400px;
+        height: 240px;
     }
 
-#contextHeading{
-    color:black;
-    margin-left: 100px ;
-    margin-top: 50px ;
+    /* 9th button opens */
+    #modal9 {
+        background-color: #fff;
+        border-width: 15px,15px,15px,15px;
+        opacity: 0;
+        position: fixed;
+        padding-left: 15px;
+        padding-top: 15px;
+        height: 200px;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        bottom: 0;
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        color:#000;
+    }
+    
+#modal9.open{
+        opacity:1;
+        z-index: 999;
+        height: 250px;
+    }
+/* 10th button opens */
+#modal10 {
+    background-color: #fff;
+    border-width: 15px,15px,15px,15px;
+    opacity: 0;
+    position: fixed;
+    padding-left: 15px;
+    padding-top: 15px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color:#000;
+}
+
+#modal10.open{
+    opacity:1;
+    z-index: 999;
+    height: 240px;
+}
+
+/* 11th button opens */
+#modal11 {
+    background-color: #fff;
+    border-width: 15px,15px,15px,15px;
+    opacity: 0;
+    position: fixed;
+    padding-left: 15px;
+    padding-top: 15px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color:#000;
+}
+
+#modal11.open{
+    opacity:1;
+    z-index: 999;
+    height: 240px;
+}
+
+/* 12th button opens */
+#modal12 {
+    background-color: #fff;
+    border-width: 15px,15px,15px,15px;
+    opacity: 0;
+    position: fixed;
+    padding-left: 15px;
+    padding-top: 15px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color:#000;
+}
+
+#modal12.open{
+    opacity:1;
+    z-index: 999;
+    height: 240px;
 }
 
 #contextParagraph{
@@ -397,3 +505,44 @@ body {
     margin-top: 20px ;
     margin-right: 90px ;
 }
+
+
+#sources ul,li {
+    list-style-type: disc; /* Sets the bullet type to visible discs */
+    margin-left: 20px; /* Adds space between the bullet and the text */
+    padding-left: 20px; /* Indents the list items for better readability */
+    margin-bottom: 20px; /* Indents the list items for better readability */
+
+}
+
+#sources  ul li {
+    margin-bottom: 5px; /* Adds spacing between each list item */
+    font-family: inherit; /* Sets a clean font for the list */
+    font-size: 10px; /* Adjusts the font size */
+    color: #333; /* Sets a neutral text color */
+}
+
+#sources ul li a {
+    text-decoration: none; /* Removes underlines from the links */
+    color: #007BFF; /* Sets a blue color for the links */
+    transition: color 0.3s ease; /* Adds a smooth color transition effect */
+}
+
+#sources ul li a:hover {
+    color: #0056b3; /* Changes the link color when hovered */
+}
+
+#sources h3{
+    padding-left: 15px;
+}
+
+.navigation-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px; 
+    right: 20px;
+    gap: 10px;
+}
+
+

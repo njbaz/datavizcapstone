@@ -129,3 +129,55 @@ openBtn8.addEventListener("click", () => {
 closeBtn8.addEventListener("click", () => {
     modal8.classList.remove("open");
 });
+
+//event 9 button
+const openBtn9 = document.getElementById("openModal9");
+const closeBtn9 = document.getElementById("closeModal9");
+const modal9 = document.getElementById("modal9");
+
+openBtn9.addEventListener("click", () => {
+    modal9.classList.add("open");
+});
+
+closeBtn9.addEventListener("click", () => {
+    modal9.classList.remove("open");
+});
+
+//event 10 button
+const openBtn10 = document.getElementById("openModal10");
+const closeBtn10 = document.getElementById("closeModal10");
+const modal10 = document.getElementById("modal10");
+
+openBtn10.addEventListener("click", () => {
+    modal10.classList.add("open");
+});
+
+closeBtn10.addEventListener("click", () => {
+    modal10.classList.remove("open");
+});
+//event 11 button
+const openBtn11 = document.getElementById("openModal11");
+const closeBtn11 = document.getElementById("closeModal11");
+const modal11 = document.getElementById("modal11");
+
+openBtn11.addEventListener("click", () => {
+    modal11.classList.add("open");
+});
+
+closeBtn11.addEventListener("click", () => {
+    modal11.classList.remove("open");
+});
+
+//event 12 button
+const openBtn12 = document.getElementById("openModal12");
+const closeBtn12 = document.getElementById("closeModal12");
+const modal12 = document.getElementById("modal12");
+
+openBtn12.addEventListener("click", () => {
+    modal12.classList.add("open");
+});
+
+closeBtn12.addEventListener("click", () => {
+    modal12.classList.remove("open");
+});
+
