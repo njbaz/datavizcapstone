@@ -23,6 +23,7 @@ body {
 
 
 
+
 .title{
     box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
     padding: 1rem 0rem 1rem 0.7rem;
@@ -171,7 +172,7 @@ body {
 #modal1.open{
     opacity:1;
     z-index: 999;
-    height: 325px;
+    height: 400px;
 }
 
 
@@ -204,7 +205,7 @@ body {
 #modal2.open{
     opacity:1;
     z-index: 999;
-    height: 325px;
+    height: 350px;
 } 
 
 
@@ -235,7 +236,7 @@ body {
 #modal3.open{
         opacity:1;
         z-index: 999;
-        height: 300px;
+        height: 350px;
     }
 /* 4th button opens */
     #modal4 {
@@ -263,7 +264,7 @@ body {
 #modal4.open{
         opacity:1;
         z-index: 999;
-        height: 325px;
+        height: 375px;
     }
 /* 5th button opens */
     #modal5 {
@@ -291,7 +292,7 @@ body {
 #modal5.open{
         opacity:1;
         z-index: 999;
-        height: 450px;
+        height: 550px;
     }
 
 
@@ -321,7 +322,7 @@ body {
 #modal6.open{
         opacity:1;
         z-index: 999;
-        height: 220px;
+        height: 275px;
     }
 
 
@@ -351,7 +352,7 @@ body {
 #modal7.open{
         opacity:1;
         z-index: 999;
-        height: 220px;
+        height: 280px;
     }
 
 
@@ -381,7 +382,7 @@ body {
 #modal8.open{
         opacity:1;
         z-index: 999;
-        height: 240px;
+        height: 300px;
     }
 
     /* 9th button opens */
@@ -410,7 +411,7 @@ body {
 #modal9.open{
         opacity:1;
         z-index: 999;
-        height: 250px;
+        height: 310px;
     }
 /* 10th button opens */
 #modal10 {
@@ -438,7 +439,7 @@ body {
 #modal10.open{
     opacity:1;
     z-index: 999;
-    height: 240px;
+    height: 300px;
 }
 
 /* 11th button opens */
@@ -467,7 +468,7 @@ body {
 #modal11.open{
     opacity:1;
     z-index: 999;
-    height: 240px;
+    height: 300px;
 }
 
 /* 12th button opens */
@@ -496,14 +497,14 @@ body {
 #modal12.open{
     opacity:1;
     z-index: 999;
-    height: 240px;
+    height: 300px;
 }
 
 #contextParagraph{
     color:black;
-    margin-left: 90px ;
+    margin-left: 150px ;
     margin-top: 20px ;
-    margin-right: 90px ;
+    margin-right: 150px ;
 }
 
 

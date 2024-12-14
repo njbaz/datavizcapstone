@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>State View</title>
+    <link rel="stylesheet" href="stateView.css" />
+    <!-- <script defer src="timelinescript.js"></script> -->
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+</head>
+<body>
+    <h1 class="heading">Intro to this...</h1>
+    <p>Introduce GYS metric. what is this grade level thing</p>
+    <table class="styled-table">
+        <tr>
+          <th>Subject</th>
+          <th>Nat'l Avg <em></em>Learning Loss</em></th>
+          <th>Nat'l Avg <em>Recovery</em></th>
+        </tr>
+        <tr>
+          <td>Math</td>
+          <td>-0.59 grade levels</td>
+          <td>+0.18 grade levels</td>
+        </tr>
+        <tr>
+          <td>Reading Language Arts</td>
+          <td>-0.35 grade levels</td>
+          <td>+0.09 grade levels</td>
+        </tr>
+      </table>
+    <p>How did CA compare to US? 2 heatmaps where I average gys_ol 1922 and 2223 by state with a subject picker.</p>
+    <p>General trends - what is CA's demographic profile? more diverse, less diverse, what is the average demo breakown compared to national avg.</p>
+    <p>Demographic Analysis - free lunch trends, diveristy trends, size trends</p>
+
+
+    <div id="filter"></div>
+
+        <h2>Learning Loss</h2>
+        <div id="container"></div>
+        <h2>Recovery</h2>
+         <div id="second-container"></div>
+
+
+
+         
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="stateView.js"></script>
+    <div class="navigation-buttons">
+        <a href="covid.html" class="nav-button"><button>Back</button></a>
+        <a href="districtView.html" class="nav-button"><button>Next</button></a>
+    </div> 
+    
+</body>
+</html>

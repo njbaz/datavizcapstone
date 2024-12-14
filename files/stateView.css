@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    padding: 0;
+    margin-left: 50px;
+    box-sizing: border-box;
+
+}
+
+
+
+
+body {
+    background-color: #fff;
+    color: #000;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.heading{
+    color:#3a4d82;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 3rem;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    /* margin: 25px 0; */
+    font-size: 0.9em;
+    font-family: inherit;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #a2443d;
+}
+
+
+
+.tooltip {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    pointer-events: none; /* Prevent tooltip from interfering with mouse events */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1000;
+  }
+
+  .tooltip2 {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    pointer-events: none; /* Prevent tooltip from interfering with mouse events */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1000;
+  }
+  
+  
+path.state {
+    stroke: black;
+}
+
+.state:hover {
+    stroke-width: 3;
+    cursor: pointer;
+}
+
+
+  
+  /* Hover content styling */
+  #hover-content {
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
