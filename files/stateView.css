@@ -132,3 +132,29 @@ path.state {
   .nav-button button:hover {
     background-color: #b2ac9d; /* Button hover color */
   }
+  .map-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.map-container > div {
+    width: 45vw; /* Explicit width */
+    height: 45vh; /* Explicit height */
+    max-width: 600px;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.map-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.map-container > div {
+  width: 45vw;
+  height: 45vh;
+  /* border: 1px solid red; Add a border for debugging */
+}

@@ -2,8 +2,11 @@
 let svg, svg2;
 
 // Dimensions
-const width = window.innerWidth * 0.7,
-  height = window.innerHeight * 0.7;
+// const width = window.innerWidth * 0.7,
+//   height = window.innerHeight * 0.7;
+const width = Math.min(window.innerWidth * 0.45, 600), // 45% of viewport or 600px max
+      height = Math.min(window.innerHeight * 0.45, 400); // 45% of viewport or 400px max
+
 
 // State object to hold GeoJSON and CSV data
 let state = {
@@ -57,8 +60,25 @@ function initSharedFilter() {
   });
 }
 
+// Function to get container dimensions dynamically
+function getContainerSize(containerId) {
+  const container = document.getElementById(containerId);
+  return {
+    width: container.offsetWidth,
+    height: container.offsetHeight
+  };
+}
+
+window.addEventListener("resize", () => {
+  initFirstMap();
+  initSecondMap();
+});
+
 // Initialize the first map
 function initFirstMap() {
+  // Remove any existing SVG
+  d3.select("#container").select("svg").remove();
+
   // Add SVG for the first map
   svg = d3
     .select("#container")
@@ -155,11 +175,12 @@ const tooltip = d3.select("body")
       .on("mouseout", () => {
         tooltip.style("opacity", 0); // Hide tooltip on mouseout
       });
-  
+
+
     draw();
   }
   
-  
+  console.log("Width:", width, "Height:", height);
 
   const tooltip2 = d3.select("body")
   .append("div")
