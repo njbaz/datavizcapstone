@@ -11,26 +11,65 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
 </head>
 <body>
-<h1 class="heading">Understanding COVID Learning</h1>
-<p>Understanding COVID Learning</p>
-<article class="gallery">
-  <img src="images/placeholder-square.jpg" alt="img" />
-  <img src="images/placeholder-square.jpg" alt="img" />
-  <img src="images/placeholder-square.jpg" alt="img" />
-  <img src="images/placeholder-square.jpg" alt="img" />
-  <img src="images/placeholder-square.jpg" alt="img" />
-  <img src="images/placeholder-square.jpg" alt="img" />
-  <img src="images/placeholder-square.jpg" alt="img" />
-  <img src="images/placeholder-square.jpg" alt="img" />
+<!-- <h1 class="heading">Understanding COVID Learning</h1>
+<p>Understanding COVID Learning</p> -->
+<header>
+    <h1>Understanding COVID Learning Conditions</h1>
+</header>
 
-</article>
+<!-- Collage Layout -->
+<main class="collage-container">
+    <!-- Item 1 -->
+    <div class="collage-item wide">
+        <img src="images/transition.jpg" alt="Remote Learning">
+        <p><strong>77% of Schools</strong><br>Shifted to online distance learning in Spring 2020.</p>
+        <p>In response to the COVID-19 pandemic, a significant shift occurred in the U.S. education system. By spring 2020, 77% of public schools had transitioned to online distance learning to mitigate the virus's spread. This rapid change aimed to ensure educational continuity amid unprecedented challenges. <br><br>By September 2020, 67% of adults with school-aged children reported that classes had moved to a distance learning format utilizing online resources. This widespread adoption of remote learning highlighted the education system's adaptability during the crisis.</p>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="collage-item tall">
+        <img src="images/chrombooks.jpg" alt="Tech Assistance">
+        <p><strong>59% of Students</strong><br>Received computers or digital devices.</p>
+        <p>The sudden move to online education exposed significant disparities in students' access to necessary technology. In September 2020, 59% of adults with school-aged children indicated that schools provided computers or digital devices to students, aiming to bridge the digital divide. Despite these efforts, challenges persisted, particularly among low-income households, underscoring the need for equitable access to educational resources.</p>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="collage-item">
+        <img src="images/zoomclass.png" alt="Socio-Emotional Impact">
+        <p><strong>84% of College Students</strong><br>Had classes moved online.</p>
+        <p>Higher education institutions also faced significant disruptions. In spring 2020, 84% of college students experienced a transition to some or all classes being conducted online. Additionally, 15% of undergraduate students received emergency financial assistance from their institutions during this period, reflecting the economic hardships imposed by the pandemic on the student population.</p>
+
+    </div>
+
+    <!-- Item 4 -->
+    <div class="collage-item">
+        <img src="images/absenteeism.webp" alt="Absenteeism">
+        <p><strong>72% of Schools</strong><br>Reported a rise in chronic absenteeism.</p>
+        <p>Chronic absenteeism became a growing concern during the pandemic. Compared to pre-pandemic levels, 72% of public schools reported an increase in chronic absenteeism during the 2021–22 school year. Factors contributing to this rise included health concerns, disengagement from remote learning, and various socio-economic challenges faced by families during the pandemic.</p>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="collage-item wide">
+        <img src="images/burnout.jpg" alt="College Learning">
+        <p><strong>87% of Schools</strong><br>Reported negative socio-emotional impacts.</p>
+        <p>The pandemic's effects extended beyond academics, significantly impacting students' socio-emotional and behavioral development. During the 2021–22 school year, 87% of public schools reported negative impacts on students' socio-emotional development, while 84% noted adverse effects on behavioral development. Schools observed increases in classroom disruptions, acts of disrespect towards teachers and staff, and rowdiness outside the classroom, indicating the broader implications of prolonged remote learning and social isolation.</p>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>Data Source: <a href="https://nces.ed.gov/surveys/annualreports/topical-studies/covid/" target="_blank">NCES COVID-19 Studies</a></p>
+</footer>
 
 <div class="navigation-buttons">
     <a href="timeline.html" class="nav-button"><button>&#8592; Back</button></a>
     <a href="stateView.html" class="nav-button"><button>Next &#8594;</button></a>
 </div> 
-
+<script src="covid.js"></script>
 </body>
 </html>
