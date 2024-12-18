@@ -27,16 +27,22 @@
           <td>+0.18 grade levels</td>
         </tr>
         <tr>
-          <td>Reading Language Arts</td>
+          <td>Reading/Language Arts</td>
           <td>-0.35 grade levels</td>
           <td>+0.09 grade levels</td>
         </tr>
       </table>
     <p>State Analysis</p>
-    <tableau-viz id="tableauViz"       
-src='https://public.tableau.com/views/StateAnalysis_17344870261560/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'>
-</tableau-viz>
-
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+ 
+    <tableau-viz id="tabviz"></tableau-viz>
+     
+    <script type="text/javascript">
+      const tviz = document.getElementById("tabviz")
+      tviz.src = 'https://public.tableau.com/views/StateAnalysis_17344870261560/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'
+      tviz.height = "1000px"
+      tviz.style.width = "1000px"
+    </script>
     <script src="scripts.js"></script>
 <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 
