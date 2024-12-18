@@ -35,13 +35,13 @@ body {
 
   .header p {
     font-size: 1rem;
-    color: #b3b3b3;
+    color: #7f7f7f;
   }
   
   .content-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 40px;
   }
   
   .content-box {
@@ -63,6 +63,7 @@ body {
     font-size: 0.9rem;
     color: #555;
     line-height: 1.5;
+    padding-top: 10px;
   }
   
   /* Hover effect */
