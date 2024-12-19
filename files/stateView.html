@@ -13,7 +13,9 @@
     />
 </head>
 <body>
+  <div class="container">
     <h1 class="heading">State Analysis: Understanding CA's Place in the US</h1>
+    <H2>SECTION #1: NATIONAL TRENDS</H2>
     <p>Introduce GYS metric. what is this grade level thing</p>
     <table class="styled-table">
         <tr>
@@ -32,33 +34,95 @@
           <td>+0.09 grade levels</td>
         </tr>
       </table>
-    <p>State Analysis</p>
-    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
- 
-    <tableau-viz id="tabviz"></tableau-viz>
-     
-    <script type="text/javascript">
-      const tviz = document.getElementById("tabviz")
-      tviz.src = 'https://public.tableau.com/views/StateAnalysis_17344870261560/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'
-      tviz.height = "1000px"
-      tviz.style.width = "1000px"
-    </script>
-    <script src="scripts.js"></script>
-<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+  
+    <!-- VIZ #1: STATE MAPS -->
+    <div style="width:1500px; height:600px;">  
+      <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.js"> 
+      
+      </script>  
+      
+      <tableau-viz id="tableauViz1" src="https://public.tableau.com/views/StateAnalysis_17344870261560/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"  toolbar="bottom" hide-tabs>  
+      </tableau-viz>  
+  </div> 
 
+  <H3>Taking a look at national subgroup trends in RECOVERY...</H3>
+
+    <!-- VIZ #2: SUBGROUP ANALYSIS -->
+  <div style="width:1700px; height:800px;">  
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.js"> 
+    
+    </script>  
+    
+    <tableau-viz id="tableauViz2" src="https://public.tableau.com/views/StateAnalysis_17344870261560/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"  toolbar="bottom" hide-tabs>  
+    </tableau-viz>  
+</div> 
+  
+
+
+
+<H2>SECTION #2: CALIFORNIA</H2>
+<p>CA vs. National Averages</p>
+<table class="styled-table">
+  <tr>
+    <th>Subject</th>
+    <th>Nat'l Avg Learning Loss</th>
+    <th>Nat'l Avg Recovery</th>
+  </tr>
+  <tr>
+    <td>National: Math</td>
+    <td>-0.59 grade levels</td>
+    <td>+0.18 grade levels</td>
+  </tr>
+  <tr>
+    <td>National: Reading/Language Arts</td>
+    <td>-0.35 grade levels</td>
+    <td>+0.09 grade levels</td>
+  </tr>
+  <tr>
+    <td>California: Math</td>
+    <td>-0.34 grade levels</td>
+    <td>+0.08 grade levels</td>
+  </tr>
+  <tr>
+    <td>California: Reading/Language Arts</td>
+    <td>-0.13 grade levels</td>
+    <td>-0.06 grade levels</td>
+  </tr>
+</table>
+</div>
+<div class="container">
+<p>CA by Zip VERY IN PROGRESS</p>
+
+    <!-- VIZ #3: CA MAP -->
+    <div style="width:1700px; height:800px;">  
+      <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.js"> 
+      
+      </script>  
+      
+      <tableau-viz id="tableauViz3" src="https://public.tableau.com/views/CAbyZip_17345767848760/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"  toolbar="bottom" hide-tabs>  
+      </tableau-viz>  
+  </div> 
     <p>General trends - what is CA's demographic profile? more diverse, less diverse, what is the average demo breakown compared to national avg.</p>
     <p>Demographic Analysis - free lunch trends, diveristy trends, size trends</p>
+ 
+  </div>
 
-
-    <div id="filter"></div>
+    <!-- old d3......-->
+    <!-- <div id="filter"></div>
     <div class="map-container">
         <div id="container"></div>
         <div id="second-container"></div>
-    </div>
-
+    </div> -->
+<!-- 
          
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script> -->
+    
+    
+    
+    
+
+    
     <script src="stateView.js"></script>
     <div class="navigation-buttons">
         <a href="covid.html" class="nav-button"><button>&#8592; Back</button></a>
