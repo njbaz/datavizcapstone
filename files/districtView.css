@@ -11,8 +11,16 @@ body {
     color: #fff;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
+    text-align: center;
 }
 
+
+p{
+  padding-left: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 300px;
+}
 .heading{
     color:#fff;
     padding: 1rem 0;
@@ -23,14 +31,15 @@ body {
 
 
 .container{
-  display:block;  
-  margin: auto;
   padding-left: 300px;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-right: 300px;
 }
 
+#viz1{
+  height:1000px;
+}
 
 
 
