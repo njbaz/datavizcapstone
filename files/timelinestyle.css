@@ -1,5 +1,8 @@
+/* import font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+
+/* basic styling*/
 * {
     padding: 0;
     margin: 0;
@@ -21,9 +24,7 @@ body {
     box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
 }
 
-
-
-
+/* timeline event styling */
 .title{
     box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
     padding: 1rem 0rem 1rem 0.7rem;
@@ -68,7 +69,6 @@ body {
     padding: 50px 0;
 }
 
-/* create a line */
 #timeline ul li {
     list-style: none;
     position: relative;
@@ -89,11 +89,11 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-/*right side*/
+/*right side events*/
 #timeline ul li:nth-child(odd) .box{
     left:40px;
 }
-/*left side*/
+/*left side events*/
 #timeline ul li:nth-child(even) .box{
     left:-500px;
     transform: translateX(-400%);
@@ -118,6 +118,7 @@ body {
 
 }
 
+/* line down the middle */
 #timeline .fa-solid {
     display: flex;
     align-items: center;
@@ -142,9 +143,7 @@ body {
     
     }
 
-
-
-
+/* STYLING FOR EACH BUTTON OPEN. Separated because each blurb is a different length so the boxes need to be different sizes. */
 /* 1st button opens */
 #modal1 {
     background-color: #fff;
@@ -500,6 +499,8 @@ body {
     height: 300px;
 }
 
+
+/* Paragraph at top of page styling */
 #contextParagraph{
     color:black;
     margin-left: 150px ;
@@ -508,21 +509,19 @@ body {
 }
 
 
+/* Sources */
 #sources ul,li {
-    list-style-type: disc; /* Sets the bullet type to visible discs */
-    margin-left: 20px; /* Adds space between the bullet and the text */
-    padding-left: 20px; /* Indents the list items for better readability */
-    margin-bottom: 20px; /* Indents the list items for better readability */
-
-}
-
-#sources  ul li {
-    margin-bottom: 5px; /* Adds spacing between each list item */
+    list-style-type: disc; 
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px; 
     font-family: inherit; /* Sets a clean font for the list */
     font-size: 10px; /* Adjusts the font size */
     color: #333; /* Sets a neutral text color */
+
 }
 
+/* Sources Links*/
 #sources ul li a {
     text-decoration: none; /* Removes underlines from the links */
     color: #007BFF; /* Sets a blue color for the links */
@@ -537,26 +536,18 @@ body {
     padding-left: 15px;
 }
 
+
+/* Nav Buttons*/
 .navigation-buttons{
     display: flex;
     align-items: center;
     justify-content: center;
     bottom: 20px; 
     right: 20px;
-    gap: 10px;
+    gap: 20px;
 }
 
 
-
-
-.navigation-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-    margin-bottom: 20px;
-  }
-  
   .nav-button button {
     padding: 10px 20px;
     font-family: "Poppins";

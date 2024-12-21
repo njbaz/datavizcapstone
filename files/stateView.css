@@ -5,6 +5,7 @@
     margin-left: 100px;
     margin-right: 100px;
     box-sizing: border-box;
+    text-align: center;
 
 }
 
@@ -16,6 +17,7 @@ body {
     color: #000;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
+
     
 }
 
@@ -27,29 +29,28 @@ body {
     box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
 }
 
-.container{
-  display:grid;
-  align-content: center;
-  justify-content: center;
-  padding-left: 100px;
-  padding-right: 100px;
-}
 
 
 .styled-table {
     border-collapse: collapse;
-    /* margin: 25px 0; */
     font-size: 0.9em;
     font-family: inherit;
     min-width: 400px;
     max-width: 600px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
 
 }
 .styled-table thead tr {
     background-color: #009879;
     color: #ffffff;
     text-align: center;
+}
+
+.styled-table thead{
+  font-weight: bold;
 }
 .styled-table th,
 .styled-table td {
@@ -64,52 +65,23 @@ body {
     background-color: #f3f3f3;
 }
 
+
+
+#California_table tbody tr:nth-of-type(even) {
+  background-color: #a2443d;
+  color:white;
+  font-weight:bold;
+}
+
 .styled-table tbody tr:last-of-type {
     border-bottom: 2px solid #a2443d;
 }
 
-
-
-
-/* 
-.tooltip {
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    pointer-events: none; /* Prevent tooltip from interfering with mouse events */
-    /* opacity: 0; 
-    transition: opacity 0.2s ease-in-out;
-    z-index: 1000;
-  } */
-  /* 
-
-  .tooltip2 {
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    pointer-events: none; /* Prevent tooltip from interfering with mouse events */
-    /* opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-    z-index: 1000;
-  } */
-  
-/*   
-path.state {
-    stroke: black;
+.tableau-viz1, .tableau-viz2, .tableau-viz3{
+  display: block;
+  margin: auto;
+  padding-bottom: 10px;
 }
-
-.state:hover {
-    stroke-width: 3;
-    cursor: pointer;
-}
-
-
   
   /* Hover content styling */
   #hover-content {
@@ -146,29 +118,4 @@ path.state {
   .nav-button button:hover {
     background-color: #b2ac9d; /* Button hover color */
   }
-  .map-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.map-container > div {
-    width: 45vw; /* Explicit width */
-    height: 45vh; /* Explicit height */
-    max-width: 600px;
-    max-height: 400px;
-    overflow: hidden;
-}
-
-.map-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.map-container > div {
-  width: 45vw;
-  height: 45vh;
-  /* border: 1px solid red; Add a border for debugging */
-}  
+ 

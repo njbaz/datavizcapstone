@@ -1,3 +1,5 @@
+// JS to show/hide boxes as you scroll
+
 "use strict";
 
 const boxes = document.querySelectorAll(".box");

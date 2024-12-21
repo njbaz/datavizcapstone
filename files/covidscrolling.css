@@ -1,6 +1,7 @@
+/* load font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-
+/* general styling */
 * {
     box-sizing: border-box;
   }
@@ -20,6 +21,8 @@
   }
   
 
+
+/* scroll section styling */
   p,
   h1,
   h2,
@@ -33,6 +36,7 @@
 
   }
 
+/* pre-scroll section styling */
   .intro__hed {
     margin: 2rem auto 0.5rem auto;
     color:#fff;
@@ -48,7 +52,7 @@
     padding: 1rem 0;
   }
   
-  
+/* add spacing for intro/outro buffer sections */
   #intro {
     margin-bottom: 100px;
   }
@@ -57,6 +61,7 @@
     height: 400px;
   }
   
+/* Nav button styling */
 
   .navigation-buttons {
     display: flex;
@@ -77,12 +82,12 @@
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
-  
+
   .nav-button button:hover {
     background-color: #b2ac9d; /* Button hover color */
   }
   
-
+/* Make sticky p text larger */
   .sticky-thing{
     font-size: 100px;
 

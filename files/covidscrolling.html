@@ -6,6 +6,8 @@
     <title class="heading">Standardized Assessments in the Era of COVID</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="covidscrolling.css" />
+    
+    <!-- internal CSS -->
     <style>
       #scrolly {
         position: relative;
@@ -13,6 +15,7 @@
         padding: 1rem;
       }
 
+    /* core content styling */
       article {
         position: relative;
         padding: 0;
@@ -21,6 +24,8 @@
         
       }
 
+
+      /* background "sticky" content */
       .sticky-thing {
         position: -webkit-sticky;
         position: sticky;
@@ -41,12 +46,14 @@
         background-position: center center;
       }
 
+    /* sticky paragraph text */
       .sticky-thing p {
         font-size: 8rem;
         font-weight: 900;
         color: #fff;
       }
 
+    /* step styling */
       .step {
         margin: 0 auto 2rem auto;
         margin-bottom: 15rem;
@@ -72,6 +79,7 @@
 
   <body>
     <main>
+      <!-- intro section -->
       <section id="intro">
         <h1 class="intro__hed">Standardized Assessments in the era of COVID</h1>
         <p class="intro__dek">
@@ -79,12 +87,13 @@
             The disruptions caused by COVID-19 placed intense pressure on administrators and districts to not only assess the extent of learning loss but also to demonstrate measurable progress toward recovery. In a system shaped by No Child Left Behind (NCLB) and Every Student Succeeds Act (ESSA), where performance metrics often define success, districts faced mounting expectations to quickly "recover" and bring students back to pre-pandemic achievement levels. This pressure was amplified by federal and state funding tied to performance outcomes, compelling schools to implement accelerated learning programs, remediation strategies, and data-driven interventions. The pandemic underscored the tension between accountability and equity, forcing districts to balance the demand for results with the need to address deepened disparities and ongoing social-emotional challenges.
         </p>
       </section>
-
+      <!-- scrolling section-->
       <section id="scrolly">
         <div class="sticky-thing">
           <p style="text-align: center; color:black;">Realities of COVID Learning</p>
         </div>
 
+        <!-- scrolled content-->
         <article>
           <div class="step" data-step="1" data-color="red">
             <p><em>The transition to online learning happened quickly.</em> <br><br>By spring 2020, 77% of public schools shifted to online distance learning.</p>
@@ -100,14 +109,15 @@
           </div>
         </article>
       </section>
-
+        <!-- bottom section to ensure that last scroll section is visible-->
       <section id="outro"></section>
     </main>
 
+        <!-- load in Scrollama library-->
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <script>
-      // DOM - document object model
+      // set variables for relevant DOM objects
       var main = document.querySelector("main");
       var scrolly = main.querySelector("#scrolly");
       var sticky = scrolly.querySelector(".sticky-thing");
@@ -125,7 +135,7 @@
         el.classList.add('is-active');
         sticky.querySelector("p").innerText = el.dataset.step;
       }
-
+      // scroller function
       function init() {
         scroller
           .setup({
@@ -137,13 +147,16 @@
 
         window.addEventListener("resize", scroller.resize);
       }
-
+      //call scroller function
       init();
+      //end JS component
     </script>
 
+<!-- Source & in-line styling -->
 <p style="text-align:center; color:white;">Source: <a href="https://nces.ed.gov/surveys/annualreports/topical-studies/covid/">National Center for Education Statistics</a></p>
 <br><br>
 
+<!-- Nav Buttons -->
 <div class="navigation-buttons">
     <a href="timeline.html" class="nav-button"><button>&#8592; Back</button></a>
     <a href="stateView.html" class="nav-button"><button>Next &#8594;</button></a>
