@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title class="heading">Standardized Assessments in the Era of COVID</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="covidscrolling.css" />
+    <style>
+      #scrolly {
+        position: relative;
+        background-color: #f3f3f3;
+        padding: 1rem;
+      }
+
+      article {
+        position: relative;
+        padding: 0;
+        max-width: 20rem;
+        margin: 0 auto;
+        
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        background-color: #3a4d82;
+        z-index: 0;
+        top: 12.5vh;
+        height: 75vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('images/covid2.png');
+        opacity: 0.5;
+        background-size: contain;
+        background-position: center center;
+      }
+
+      .sticky-thing p {
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        margin-bottom: 15rem;
+        color: #fff;
+      }
+
+      .step:last-child {
+        margin-bottom: 0px;
+      }
+
+      .step.is-active p {
+        background-color: #fff;
+        color: #3b3b3b;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        background-color:#595959;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section id="intro">
+        <h1 class="intro__hed">Standardized Assessments in the era of COVID</h1>
+        <p class="intro__dek">
+            <br>
+            The disruptions caused by COVID-19 placed intense pressure on administrators and districts to not only assess the extent of learning loss but also to demonstrate measurable progress toward recovery. In a system shaped by No Child Left Behind (NCLB) and Every Student Succeeds Act (ESSA), where performance metrics often define success, districts faced mounting expectations to quickly "recover" and bring students back to pre-pandemic achievement levels. This pressure was amplified by federal and state funding tied to performance outcomes, compelling schools to implement accelerated learning programs, remediation strategies, and data-driven interventions. The pandemic underscored the tension between accountability and equity, forcing districts to balance the demand for results with the need to address deepened disparities and ongoing social-emotional challenges.
+        </p>
+      </section>
+
+      <section id="scrolly">
+        <div class="sticky-thing">
+          <p style="text-align: center; color:black;">Realities of COVID Learning</p>
+        </div>
+
+        <article>
+          <div class="step" data-step="1" data-color="red">
+            <p><em>The transition to online learning happened quickly.</em> <br><br>By spring 2020, 77% of public schools shifted to online distance learning.</p>
+          </div>
+          <div class="step" data-step="2" data-color="green">
+            <p><em>Not all students had access to the the technology they needed to learn remotely.</em><br><br>In September 2020, 59% of adults with school-aged children reported that schools provided computers or digital devices to students. </p>
+          </div>
+          <div class="step" data-step="3" data-color="blue">
+            <p><em>Students missed significant instructional time.</em><br><br>Chronic absenteeism increased, with 72% of public schools reporting a rise compared to pre-pandemic levels</p>
+          </div>
+          <div class="step" data-step="4" data-color="red">
+            <p><em>The negative impacts extended beyond academics.</em><br><br>During the 2021–22 school year, 87% of public schools reported negative impacts on students' socio-emotional development, and 84% noted negative effects on behavioral development. </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="outro"></section>
+    </main>
+
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      // DOM - document object model
+      var main = document.querySelector("main");
+      var scrolly = main.querySelector("#scrolly");
+      var sticky = scrolly.querySelector(".sticky-thing");
+      var article = scrolly.querySelector("article");
+      var steps = article.querySelectorAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        var el = response.element;
+        console.log(el);
+        steps.forEach(step => step.classList.remove('is-active'));
+        el.classList.add('is-active');
+        sticky.querySelector("p").innerText = el.dataset.step;
+      }
+
+      function init() {
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.33,
+            debug: false
+          })
+          .onStepEnter(handleStepEnter);
+
+        window.addEventListener("resize", scroller.resize);
+      }
+
+      init();
+    </script>
+
+<p style="text-align:center; color:white;">Source: <a href="https://nces.ed.gov/surveys/annualreports/topical-studies/covid/">National Center for Education Statistics</a></p>
+<br><br>
+
+<div class="navigation-buttons">
+    <a href="timeline.html" class="nav-button"><button>&#8592; Back</button></a>
+    <a href="stateView.html" class="nav-button"><button>Next &#8594;</button></a>
+</div> 
+
+  </body>
+</html>
