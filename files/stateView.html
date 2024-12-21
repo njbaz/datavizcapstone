@@ -12,10 +12,12 @@
     />
 </head>
 <body>
-
+    <!-- Headings -->
     <h1 class="heading">State Analysis: Understanding CA's Place in the US</h1>
     <H2>SECTION #1: NATIONAL TRENDS</H2>
     <p>Introduce GYS metric. what is this grade level thing</p>
+
+    <!--National Averages for Reference -->
     <table class="styled-table">
         <tr>
           <th>Subject</th>
@@ -49,7 +51,7 @@
   <hr>
   <H3>Taking a look at national subgroup trends in RECOVERY...</H3>
 
-    <!-- VIZ #2: SUBGROUP ANALYSIS -->
+    <!-- VIZ #2: NATIONAL SUBGROUP ANALYSIS -->
   <div style="width:1700px; height:800px;">  
     <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.js"> </script>  
     <tableau-viz id="tableauViz2" src="https://public.tableau.com/views/StateAnalysis_17344870261560/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"  toolbar="bottom" hide-tabs>  </tableau-viz>  
@@ -59,6 +61,7 @@
 <br><br>
 <hr>
 
+    <!-- Intro to CA Section -->
 <H2>SECTION #2: CALIFORNIA</H2>
 <p>CA vs. National Averages</p>
 <table class="styled-table" id="California_table">
@@ -90,7 +93,9 @@
 
 </table>
 
-<p>CA by Zip VERY IN PROGRESS</p>
+<hr>
+
+<h3>California Learning Loss & Recovery by Zip Code</h3>
 
     <!-- VIZ #3: CA MAP -->
     <div style="width:1700px; height:800px;">  
@@ -101,13 +106,8 @@
       <tableau-viz id="tableauViz3" src="https://public.tableau.com/views/CAbyZip_17345767848760/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"  toolbar="bottom" hide-tabs>  
       </tableau-viz>  
   </div> 
-    <p>General trends - what is CA's demographic profile? more diverse, less diverse, what is the average demo breakown compared to national avg.</p>
-    <p>Demographic Analysis - free lunch trends, diveristy trends, size trends</p>
- 
-
-
-    
-    <script src="stateView.js"></script>
+   
+    <!-- Nav Buttons -->
     <div class="navigation-buttons">
         <a href="covidscrolling.html" class="nav-button"><button>&#8592; Back</button></a>
         <a href="districtView.html" class="nav-button"><button>Next &#8594;</button></a>
