@@ -109,4 +109,8 @@ body {
   .nav-button button:hover {
     background-color: #b2ac9d; /* Button hover color */
   }
+
+  .description{
+    text-align: left;
+  }
  
