@@ -183,3 +183,16 @@ closeBtn12.addEventListener("click", () => {
     modal12.classList.remove("open");
 });
 
+//event 13 button
+const openBtn13 = document.getElementById("openModal13");
+const closeBtn13 = document.getElementById("closeModal13");
+const modal13 = document.getElementById("modal13");
+
+openBtn13.addEventListener("click", () => {
+    modal13.classList.add("open");
+});
+
+closeBtn13.addEventListener("click", () => {
+    modal13.classList.remove("open");
+});
+

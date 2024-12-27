@@ -19,10 +19,15 @@ body {
     color:#fff;
     padding: 1rem 0;
     text-align: center;
-    font-size: 3rem;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.26);
 }
 
+a{
+  color:white;
+}
+a:hover{
+  color:rgb(168, 167, 167);
+}
 /* center image */
 img{
   display: block; 
@@ -73,7 +78,7 @@ ol{
   .nav-button button {
     padding: 10px 20px;
     font-family: "Poppins";
-    font-size: 24px;
+    font-size: 16px;
     cursor: pointer;
     border: none;
     background-color: #d6d0bf; /* Button color */
@@ -84,4 +89,33 @@ ol{
   
   .nav-button button:hover {
     background-color: #b2ac9d; /* Button hover color */
+  }
+
+
+
+  #DiveIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+    
+#DiveIn button {
+    padding: 10px 20px;
+    font-family: "Poppins";
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background-color: #d6d0bf; /* Button color */
+    color: black;
+
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+#DiveIn button:hover {
+    background-color: #ffffff; /* Button hover color */
   }

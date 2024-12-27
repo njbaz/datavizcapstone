@@ -145,7 +145,7 @@ body {
 
 /* STYLING FOR EACH BUTTON OPEN. Separated because each blurb is a different length so the boxes need to be different sizes. */
 /* 1st button opens */
-#modal1 {
+#modal1, #modal2, #modal3,#modal4,#modal5,#modal6,#modal7,#modal8,#modal9,#modal10,#modal11,#modal12,#modal13 {
     background-color: #fff;
     border-width: 15px,15px,15px,15px;
     opacity: 0;
@@ -165,338 +165,14 @@ body {
     align-items: left;
     justify-content: left;
     color:#000;
+
 }
 
 
-#modal1.open{
+#modal1.open, #modal2.open, #modal3.open, #modal4.open, #modal5.open, #modal6.open, #modal7.open, #modal8.open, #modal9.open, #modal10.open, #modal11.open, #modal12.open, #modal13.open{
     opacity:1;
     z-index: 999;
-    height: 400px;
-}
-
-
-
-
-/* 2nd button opens */
-#modal2 {
-    background-color: #fff;
-    border-width: 15px,15px,15px,15px;
-    opacity: 0;
-    position: fixed;
-    padding-left: 15px;
-    padding-top: 15px;
-    height: 200px;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    bottom: 0;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    color:#000;
-}
-
-
-#modal2.open{
-    opacity:1;
-    z-index: 999;
-    height: 350px;
-} 
-
-
-/* 3rd button opens */
-#modal3 {
-    background-color: #fff;
-    border-width: 15px,15px,15px,15px;
-    opacity: 0;
-    position: fixed;
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-right: 15px;
-    height: 200px;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    bottom: 0;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    color:#000;
-    }
-    
-#modal3.open{
-        opacity:1;
-        z-index: 999;
-        height: 350px;
-    }
-/* 4th button opens */
-    #modal4 {
-        background-color: #fff;
-        border-width: 15px,15px,15px,15px;
-        opacity: 0;
-        position: fixed;
-        padding-left: 15px;
-        padding-top: 15px;
-        height: 200px;
-        top: 0;
-        left: 0;
-        right: 0;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        bottom: 0;
-        transition: all 0.3s ease-in-out;
-        z-index: -1;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        color:#000;
-    }
-    
-#modal4.open{
-        opacity:1;
-        z-index: 999;
-        height: 375px;
-    }
-/* 5th button opens */
-    #modal5 {
-        background-color: #fff;
-        border-width: 15px,15px,15px,15px;
-        opacity: 0;
-        position: fixed;
-        padding-left: 15px;
-        padding-top: 15px;
-        height: 200px;
-        top: 0;
-        left: 0;
-        right: 0;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        bottom: 0;
-        transition: all 0.3s ease-in-out;
-        z-index: -1;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        color:#000;
-    }
-    
-#modal5.open{
-        opacity:1;
-        z-index: 999;
-        height: 550px;
-    }
-
-
-/* 6th button opens */
-    #modal6 {
-        background-color: #fff;
-        border-width: 15px,15px,15px,15px;
-        opacity: 0;
-        position: fixed;
-        padding-left: 15px;
-        padding-top: 15px;
-        height: 200px;
-        top: 0;
-        left: 0;
-        right: 0;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        bottom: 0;
-        transition: all 0.3s ease-in-out;
-        z-index: -1;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        color:#000;
-    }
-    
-#modal6.open{
-        opacity:1;
-        z-index: 999;
-        height: 275px;
-    }
-
-
-    /* 7th button opens */
-    #modal7 {
-        background-color: #fff;
-        border-width: 15px,15px,15px,15px;
-        opacity: 0;
-        position: fixed;
-        padding-left: 15px;
-        padding-top: 15px;
-        height: 200px;
-        top: 0;
-        left: 0;
-        right: 0;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        bottom: 0;
-        transition: all 0.3s ease-in-out;
-        z-index: -1;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        color:#000;
-    }
-    
-#modal7.open{
-        opacity:1;
-        z-index: 999;
-        height: 280px;
-    }
-
-
-/* 8th button opens */
-    #modal8 {
-        background-color: #fff;
-        border-width: 15px,15px,15px,15px;
-        opacity: 0;
-        position: fixed;
-        padding-left: 15px;
-        padding-top: 15px;
-        height: 200px;
-        top: 0;
-        left: 0;
-        right: 0;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        bottom: 0;
-        transition: all 0.3s ease-in-out;
-        z-index: -1;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        color:#000;
-    }
-    
-#modal8.open{
-        opacity:1;
-        z-index: 999;
-        height: 300px;
-    }
-
-    /* 9th button opens */
-    #modal9 {
-        background-color: #fff;
-        border-width: 15px,15px,15px,15px;
-        opacity: 0;
-        position: fixed;
-        padding-left: 15px;
-        padding-top: 15px;
-        height: 200px;
-        top: 0;
-        left: 0;
-        right: 0;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        bottom: 0;
-        transition: all 0.3s ease-in-out;
-        z-index: -1;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        color:#000;
-    }
-    
-#modal9.open{
-        opacity:1;
-        z-index: 999;
-        height: 310px;
-    }
-/* 10th button opens */
-#modal10 {
-    background-color: #fff;
-    border-width: 15px,15px,15px,15px;
-    opacity: 0;
-    position: fixed;
-    padding-left: 15px;
-    padding-top: 15px;
-    height: 200px;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    bottom: 0;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    color:#000;
-}
-
-#modal10.open{
-    opacity:1;
-    z-index: 999;
-    height: 300px;
-}
-
-/* 11th button opens */
-#modal11 {
-    background-color: #fff;
-    border-width: 15px,15px,15px,15px;
-    opacity: 0;
-    position: fixed;
-    padding-left: 15px;
-    padding-top: 15px;
-    height: 200px;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    bottom: 0;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    color:#000;
-}
-
-#modal11.open{
-    opacity:1;
-    z-index: 999;
-    height: 300px;
-}
-
-/* 12th button opens */
-#modal12 {
-    background-color: #fff;
-    border-width: 15px,15px,15px,15px;
-    opacity: 0;
-    position: fixed;
-    padding-left: 15px;
-    padding-top: 15px;
-    height: 200px;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    bottom: 0;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    color:#000;
-}
-
-#modal12.open{
-    opacity:1;
-    z-index: 999;
-    height: 300px;
+    overflow:auto;
 }
 
 
@@ -560,6 +236,34 @@ body {
     transition: background-color 0.3s ease;
   }
   
-  .nav-button button:hover {
+  .navigation-buttons button:hover {
     background-color: #b2ac9d; /* Button hover color */
+  }
+
+/* header nav - separate CSS this time because of buttons in timeline modals */
+#header-nav-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px; 
+    right: 20px;
+    gap: 20px;
+}
+
+
+#header-nav-buttons button {
+    padding: 10px 20px;
+    font-family: "Poppins";
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #d6d0bf; /* Button color */
+    color: black;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #header-nav-buttons button:hover {
+    background-color: #b2ac9d; /* Button hover color */
+    color:#000;
   }

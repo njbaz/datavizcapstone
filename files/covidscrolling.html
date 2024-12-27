@@ -82,7 +82,18 @@
       <!-- intro section -->
       <section id="intro">
         <h1 class="intro__hed">Standardized Assessments in the era of COVID</h1>
-        <p class="intro__dek">
+                    <!-- nav buttons to other pages of the site -->
+ <br>
+  <div class="navigation-buttons">
+    <a href="index.html" class="nav-button"><button>Home</button></a>
+    <a href="timeline.html" class="nav-button"><button>History of Testing</button></a>
+    <a href="stateView.html" class="nav-button"><button>California Analysis</button></a>
+    <a href="districtView.html" class="nav-button"><button>District Analysis</button></a>
+    <a href="nextSteps.html" class="nav-button"><button>Next Steps</button></a>
+
+  </div>
+  <hr>
+        <p id="intro__dek">
             <br>
             The disruptions caused by COVID-19 placed intense pressure on administrators and districts to not only assess the extent of learning loss but also to demonstrate measurable progress toward recovery. In a system shaped by No Child Left Behind (NCLB) and Every Student Succeeds Act (ESSA), where performance metrics often define success, districts faced mounting expectations to quickly "recover" and bring students back to pre-pandemic achievement levels. This pressure was amplified by federal and state funding tied to performance outcomes, compelling schools to implement accelerated learning programs, remediation strategies, and data-driven interventions. The pandemic underscored the tension between accountability and equity, forcing districts to balance the demand for results with the need to address deepened disparities and ongoing social-emotional challenges.
         </p>
@@ -95,16 +106,16 @@
 
         <!-- scrolled content-->
         <article>
-          <div class="step" data-step="1" data-color="red">
+          <div class="step">
             <p><em>The transition to online learning happened quickly.</em> <br><br>By spring 2020, 77% of public schools shifted to online distance learning.</p>
           </div>
-          <div class="step" data-step="2" data-color="green">
+          <div class="step">
             <p><em>Not all students had access to the the technology they needed to learn remotely.</em><br><br>In September 2020, 59% of adults with school-aged children reported that schools provided computers or digital devices to students. </p>
           </div>
-          <div class="step" data-step="3" data-color="blue">
+          <div class="step">
             <p><em>Students missed significant instructional time.</em><br><br>Chronic absenteeism increased, with 72% of public schools reporting a rise compared to pre-pandemic levels</p>
           </div>
-          <div class="step" data-step="4" data-color="red">
+          <div class="step">
             <p><em>The negative impacts extended beyond academics.</em><br><br>During the 2021–22 school year, 87% of public schools reported negative impacts on students' socio-emotional development, and 84% noted negative effects on behavioral development. </p>
           </div>
         </article>
@@ -133,7 +144,6 @@
         console.log(el);
         steps.forEach(step => step.classList.remove('is-active'));
         el.classList.add('is-active');
-       // sticky.querySelector("p").innerText = el.dataset.step;
       }
       // scroller function
       function init() {
