@@ -47,7 +47,7 @@ body {
 #timeline p{
     padding:1rem 0 1rem 1rem;
     color:#000;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 #timeline button{
@@ -175,7 +175,6 @@ body {
     opacity:1;
     z-index: 999;
     overflow:auto;
-    font-size: 1.25em;
 }
 
 
@@ -188,32 +187,6 @@ body {
 }
 
 
-/* Sources */
-#sources ul,li {
-    list-style-type: disc; 
-    margin-left: 20px;
-    padding-left: 20px;
-    margin-bottom: 20px; 
-    font-family: inherit; /* Sets a clean font for the list */
-    font-size: 10px; /* Adjusts the font size */
-    color: #333; /* Sets a neutral text color */
-
-}
-
-/* Sources Links*/
-#sources ul li a {
-    text-decoration: none; /* Removes underlines from the links */
-    color: #007BFF; /* Sets a blue color for the links */
-    transition: color 0.3s ease; /* Adds a smooth color transition effect */
-}
-
-#sources ul li a:hover {
-    color: #0056b3; /* Changes the link color when hovered */
-}
-
-#sources h3{
-    padding-left: 15px;
-}
 
 
 /* Nav Buttons*/
