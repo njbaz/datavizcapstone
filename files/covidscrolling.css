@@ -4,6 +4,7 @@
 /* general styling */
 * {
     box-sizing: border-box;
+    
   }
   
   html,
@@ -32,7 +33,7 @@
 
 /* pre-scroll section styling */
   .intro__hed {
-    margin: 2rem auto 0.5rem auto;
+    margin:0;
     color:#fff;
     padding: 1rem 0;
     text-align: center;

@@ -4,8 +4,8 @@
 /* general styling */
 * {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    text-align: center;
 
 }
 
@@ -28,6 +28,11 @@ body {
     box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
 }
 
+.informationParagraph{
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
 /* table styling */
 .styled-table {
@@ -76,15 +81,15 @@ body {
 }
 
 /* padding and centering for embedded vizzes */
-.tableau-viz1, .tableau-viz2, .tableau-viz3{
+.tableau-viz1{
   display: block;
   margin: auto;
-  padding-bottom: 10px;
 }
   
 /* Nav Buttons */
 
   .navigation-buttons {
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
