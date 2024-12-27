@@ -47,6 +47,7 @@ body {
 #timeline p{
     padding:1rem 0 1rem 1rem;
     color:#000;
+    font-size: 1.5em;
 }
 
 #timeline button{
@@ -165,6 +166,7 @@ body {
     align-items: left;
     justify-content: left;
     color:#000;
+ 
 
 }
 
@@ -173,6 +175,7 @@ body {
     opacity:1;
     z-index: 999;
     overflow:auto;
+    font-size: 1.5em;
 }
 
 
