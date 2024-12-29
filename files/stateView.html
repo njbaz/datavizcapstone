@@ -25,42 +25,48 @@
             </div>
             <hr>
 <div class="informationParagraph">
-    <h3>The GYS Metric</h3>
-    <p>The GYS metric stands for <em>Grade Year Standardized</em> and is a scale used to measure student achievement growth in terms of grade levels. It is based on standardized test data linked to the National Assessment of Educational Progress (NAEP).
-      <br> <br>
-      <ul><h4> Assessment Sources:</h4>
-        <li> WHAT SCORES WERE THE SEDA PEOPLE BASING THIS OFF OF
-           </li>
-     <ul><h4> Estimation of Growth:</h4>
- <li>
-     The average growth in test scores between 4th and 8th grades in 2019 is calculated.
-      The score change between 4th and 8th grades is divided by 4 to estimate per-grade growth.
-    </li>
+  <br><br>
+  <h2>The GYS Metric: </h2> 
+  <h3>Developed by the Stanford University Educational Opportunity Project and used here as the core metric for analysis and comparison, the GYS metric stands for <em>Grade Year Standardized</em> and is a scale used to measure student achievement growth in terms of grade levels. You can learn more about how this metric was developed <a href="https://stacks.stanford.edu/file/druid:cs829jn7849/SEDA_documentation_v5.0.pdf" target="blank">here.</a></h3>
+  <br><br>
+  <ul><h4> <i class="fa-solid fa-school"></i>  Assessment Sources:</h4>
+    <li>  The key source for SEDA's analysis comes from The National Assessment of Educational Progress (NAEP).  Often referred to as the Nation's Report Card, NAEP is a large-scale assessment conducted in the United States to evaluate student performance in various academic subjects. It is administered by the National Center for Education Statistics (NCES) and overseen by the National Assessment Governing Board. Measures what U.S. students know and can do in subjects like math, reading, science, writing, and more. Tests are administered to a nationally representative sample of students in grades 4, 8, and 12. You can visit <a href="https://nces.ed.gov/nationsreportcard/" target="blank">NAEP's site</a> to learn more about this assessment. </li>
+    <br>
+  <ul><h4><i class="fa-solid fa-school"></i>  Estimation of Growth:</h4>
+ <li>The average growth in test scores between 4th and 8th grades in 2019 is calculated.
+    The score change between 4th and 8th grades is divided by 4 to estimate per-grade growth.</li>
 <br>
-      <h4> Scaling Data:</h4>
-      <li>
-
-      The data is scaled so that each unit of the GYS metric corresponds to 1 grade level of learning, referenced to the 2019 national population​
-      . </li>
-
-      <br>  
-      
-      <h4>Interpretation:</h4>
-      <li>
-      A score of 0 in the GYS metric corresponds to the national average performance in 2019.
-      Positive or negative values indicate whether students are above or below the 2019 grade-level standard.
-      Purpose:
-      The GYS metric allows for comparisons of academic performance across states, districts, and years, despite differences in tests and proficiency thresholds. It provides a unified measure of academic achievement recovery or decline post-pandemic​
-      .</li>
-    </ul>
+  <ul><h4><i class="fa-solid fa-school"></i>  Scaling Data:</h4>
+  <li>The data is scaled so that each unit of the GYS metric corresponds to 1 grade level of learning, referenced to the 2019 national population​. </li>
+  </ul>
+  <br>  
+  <ul><h4><i class="fa-solid fa-school"></i>  Interpretation of the GYS Metric:</h4>
+      <li>A score of 0 in the GYS metric corresponds to the national average performance in 2019.
+      Positive or negative values indicate whether students are above or below the 2019 grade-level standard.</li>
+      <li>For example, a score of -1 means that a given group is <em>(1) grade level below average</em> when compared with the 2019 pre-COVID average.</li>
+      <li>Conversely, a score of +1 means that a given group is <em>(1) grade level above average</em> when compared with the 2019 pre-COVID average.</li>
+  </ul>
+  <br>  
+  <ul><h4><i class="fa-solid fa-school"></i>  Using the GYS Metric to Understand Score Changes During & After COVID</h4>
+      <li>Here, the special variables from the SEDA dataset that compare scores between key pre- and post-pandemic test years become key to understanding acheivement losses and recovery.
+          <a href="https://educationrecoveryscorecard.org/wp-content/uploads/2024/01/ERS-Report-Final-1.31.pdf" target="blank">Research from the SEDA team and the Center for Education Policy Research</a> provides a framework for understanding these data. <br><br>The 1922 GYS score compares the average performance for a given group and subject in 2022 to their performance in 2019. In this way, the value represents "learning loss" by comparing their pre-pandemic scaled score to the post-pandemic scaled score.
+          Similarly, the 2223 GYS variable compares 2023 performance to 2022 performance, capturing "recovery" of those losses post-COVID.
+      </li>
+  </ul>
   </div>
   <br><br>
+  <hr>
+  <br><br>
     <!--National Averages for Reference -->
+    <h3 style="text-align: center;">National Averages</h3>
+    <br>
+    <P style="text-align: center;">This table provides a reference during state exploration. The values displayed here are national averages of the 1922 GYS score (labeled "learning loss") and 2223 GYS score (labeled "recovery") by subject.</P>
+    <br><br>
     <table class="styled-table">
         <tr>
           <th>Subject</th>
-          <th>Nat'l Avg Learning Loss</th>
-          <th>Nat'l Avg Recovery</th>
+          <th>Nat'l Avg Learning Loss<br><br> 2022 GYS Score - 2019 GYS Score</th>
+          <th>Nat'l Avg Recovery<br><br> 2023 GYS Score - 2022 GYS Score</th>
         </tr>
         <tr>
           <td>Math</td>
@@ -74,7 +80,11 @@
         </tr>
       </table>
     <br><br>
-
+    <hr>
+    <br><br>
+    <h3 style="text-align: center;">Tool #1: State Analysis<br><br></h3>
+      <p style="text-align: center;">Use the drop down menus to view a given state or states' learning loss and recovery. Subgroup comparisons are offered in the bar charts below.</p>
+      <br>
   
     <div style="display:block; margin:auto; max-width: 80%;min-height:1000px;">  
       <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.js"> 

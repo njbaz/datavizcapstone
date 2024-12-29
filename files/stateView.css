@@ -1,12 +1,12 @@
 /* import font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+
 /* general styling */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 
@@ -28,22 +28,36 @@ body {
     box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
 }
 
-.informationParagraph{
-  padding-top: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
+h3{
+  font-size: 1.25em;
+  line-height: 1.6;
+}
+h4{
+  font-size: 1.25em;
+  line-height: 1.6;
 }
 
+.informationParagraph{
+  padding-top: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+li{
+  list-style: none;
+  line-height: 1.6;
+}
 /* table styling */
 .styled-table {
     border-collapse: collapse;
     font-size: 0.9em;
     font-family: inherit;
     min-width: 400px;
-    max-width: 600px;
+    max-width: 800px;
     /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
     display: block;
     margin: auto;
+    text-align: center;
     padding-bottom: 10px;
 
 }
@@ -72,14 +86,6 @@ body {
 .styled-table tbody tr:last-of-type {
   border-bottom: 2px solid #a2443d;
 }
-
-/* CA-specific table styling */
-#California_table tbody tr:nth-of-type(even) {
-  background-color: #a2443d;
-  color:white;
-  font-weight:bold;
-}
-
 /* padding and centering for embedded vizzes */
 .tableau-viz1{
   display: block;
